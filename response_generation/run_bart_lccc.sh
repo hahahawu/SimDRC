@@ -1,0 +1,26 @@
+torchrun --nnodes=1 train.py \
+    --model_name Your_Model_Name \
+    --output_dir checkpoints \
+    --locality_loss \
+    --cross_loss \
+    --margin 0.2 \
+    --alpha 0.2 \
+    --dropout 0.1 \
+    --language_model fnlp/bart-large-chinese \
+    --train_path data/lccc/lccc.train.txt \
+    --dev_path data/lccc/lccc.dev.txt \
+    --max_training_steps 40000 \
+    --max_epoch 3 \
+    --check_steps 1400 \
+    --patience_steps 5 \
+    --warmup_steps 4000 \
+    --train_batch_size 192 \
+    --dev_batch_size 192 \
+    --seed 42 \
+    --gradient_accumulation_steps 1 \
+    --lr 3e-5 \
+    --max_seq_len 128 \
+    --world_size 4 \
+    --start_rank 0 \
+    --backend nccl \
+    --only_save_best
