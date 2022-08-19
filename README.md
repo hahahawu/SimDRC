@@ -21,7 +21,19 @@ The above figure shows the cosine similarity of token representations produced b
 vallina BART (b) SimCTG and (c) SimDRC.
 
 We evaluate our method on three dialogue tasks, including response generation, multi-turn response retrieval 
-and conversational semantic role labeling. Find detailed implementations in corresponding dir.
+and conversational semantic role labeling.
+
+## Response Generation
+
+Find details [here](https://github.com/hahahawu/SimDRC/tree/main/response_generation).
+
+## Response Retrieval
+
+Find details [here](https://github.com/hahahawu/SimDRC/tree/main/BERT_FP).
+
+## Conversational Semantic Role Labeling
+
+Find details [here](https://github.com/hahahawu/SimDRC/tree/main/CSAGN).
 
 ## Citation
 ```
