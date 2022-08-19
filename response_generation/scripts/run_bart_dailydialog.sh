@@ -1,0 +1,26 @@
+torchrun --nnodes=1 train.py \
+    --model_name Your_Model_Name \
+    --output_dir checkpoints \
+    --locality_loss \
+    --cross_loss \
+    --margin 0.7 \
+    --alpha 0.3 \
+    --dropout 0.1 \
+    --language_model facebook/bart-large-cnn \
+    --train_path data/dailydialog/dailydialog.train.txt \
+    --dev_path data/dailydialog/dailydialog.dev.txt \
+    --max_training_steps 20000 \
+    --max_epoch 15 \
+    --check_steps 300 \
+    --patience_steps 5 \
+    --warmup_steps 1000 \
+    --train_batch_size 96 \
+    --dev_batch_size 96 \
+    --seed 42 \
+    --gradient_accumulation_steps 1 \
+    --lr 3e-5 \
+    --max_seq_len 256 \
+    --world_size 8 \
+    --start_rank 0 \
+    --backend nccl \
+    --only_save_best
