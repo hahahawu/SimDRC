@@ -1,12 +1,6 @@
-# CSAGN
+# Conversational Semantic Role Labeling
 
-The official source code of EMNLP'21 paper
-["CSAGN: Conversational Structure Aware Graph Network for Conversational Semantic Role Labeling"](https://arxiv.org/abs/2109.11541).
-
-## Dataset
-
-You can find the CSRL data at [CSRL_dataset](https://github.com/syxu828/CSRL_dataset). Download the data and put them
-into `model_data`.
+This code is based on the codebase [CSAGN](https://github.com/hahahawu/CSAGN).
 
 ## Setup
 
