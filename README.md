@@ -37,11 +37,12 @@ Find details [here](https://github.com/hahahawu/SimDRC/tree/main/CSAGN).
 
 ## Citation
 ```
-@article{wu2022learning,
-  title={Learning Locality and Isotropy in Dialogue Modeling},
-  author={Wu, Han and Tan, Haochen and Zhan, Mingjie and Zhao, Gangming and Lu, Shaoqing and Liang, Ding and Song, Linqi},
-  journal={arXiv preprint arXiv:2205.14583},
-  year={2022}
+@inproceedings{
+wu2023learning,
+title={Learning Locality and Isotropy in Dialogue Modeling},
+author={Han Wu and Haochen Tan and Mingjie Zhan and Gangming Zhao and Shaoqing Lu and Ding Liang and Linqi Song},
+booktitle={The Eleventh International Conference on Learning Representations },
+year={2023},
+url={https://openreview.net/forum?id=dPs6BGO2QT0}
 }
 ```
-
